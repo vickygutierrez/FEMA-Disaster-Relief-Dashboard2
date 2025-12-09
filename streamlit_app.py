@@ -31,6 +31,3 @@ st.subheader("Boxplot of Repair Amount by TSA Eligibility")
 fig_box = px.box(df, x="tsaEligible", y="repairAmount", title="Repair Amount by TSA Eligibility",
 labels = {"tsaEligible": "TSA Eligible (1=Yes, 0=No)", "repairAmount": "Repair Amount"})
 st.plotly_chart(fig_box)
-
-#Test Summary
-st.markdown("*Insight:* Compare the central tendency and spread of repair amounts for TSA-eligible va non-eligible households.*")
